@@ -18,4 +18,5 @@ userName.addEventListener("keyup", () => {
 startButton.addEventListener("click", () => {
     localStorage.setItem("username", userName.value);
     window.location.href = "game.html";
+    console.log(localStorage.getItem("username"));
 });
