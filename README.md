@@ -1,3 +1,3 @@
-This is a simple game project called ROSHAMBO, the classic "Rock, Paper, Scissors".
+This is a simple game project called ROSHAMBO, the classic "Rock, Paper, Scissors". The game is to win by five against the great computer. Enjoy!
 
-In this project I'll be using a few statements like switch case and if else statement. The game is to win by five against the great computer.
+In this project I used a few statements like switch case and if else statement. I used localStorage for saving the player's name. The website is mobile ready. I explored some of the animation that I learned while doing the website. Javascript is amazing!
