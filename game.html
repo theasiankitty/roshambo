@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,71 @@
     <title>Ro-Sham-Bo Game</title>
     <script src="js/game-script.js" defer></script>
 </head>
+
 <body>
-    <button class="btn" id="rock">Rock</button>
-    <button class="btn" id="paper">Paper</button>
-    <button class="btn" id="scissors">Scissors</button>
+    <div class="g-header-container">
+        <div class="g-logo-container">
+            <img class="g-game-logo" src="images/roshambo-logo.png" alt="roshambo-logo">
+        </div>
+        <div class="g-score-board">
+            <div class="g-player-score-board">
+                <div id="player-name">PLAYER</div>
+                <span>-</span>
+                <div id="player-score-board">0</div>
+            </div>
+            <div class="g-cpu-score-board">
+                <div>CPU</div>
+                <span>-</span>
+                <div id="cpu-score-board">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="g-content-container">
+        <div class="g-game-container">
+            <div class="g-player-container">
+                <div class="g-game-pick-container bounce-in-left" id="player-pick-container">
+                    <img class="g-question-mark-image" id="player-pick" src="images/question-mark.png" alt="player pick">
+                </div>
+            </div>
+            <div class="g-vs-image-container">
+                <img class="g-versus-image" src="images/versus.png" alt="versus">
+            </div>
+            <div class="g-cpu-container">
+                <div class="g-game-pick-container bounce-in-right" id="cpu-pick-container">
+                    <img class="g-question-mark-image" id="cpu-pick" src="images/question-mark.png" alt="cpu pick">
+                </div>
+            </div>
+        </div>
+        <div class="g-status-board bounce-up" id="status-board">
+            <div id="status-message">ROSHAMBO!</div>
+        </div>
+    </div>
+
+    <div class="g-footer-container">
+        <div class="g-game-button-container game-main-button" id="rock">
+            <div class="g-game-button">
+                <img class="g-game-button-image" src="images/rock-left.png" alt="rock player">
+            </div>
+        </div>
+        <div class="g-game-button-container game-main-button" id="paper">
+            <div class="g-game-button">
+                <img class="g-game-button-image" src="images/paper-left.png" alt="paper player">
+            </div>
+        </div>
+        <div class="g-game-button-container game-main-button" id="scissors">
+            <div class="g-game-button">
+                <img class="g-game-button-image" src="images/scissors-left.png" alt="scissors player">
+            </div>
+        </div>
+    </div>
+
+    <div class="g-alert-modal" id="alert-modal">
+        <div class="modal-content">
+            <p id="modal-text"></p>
+            <button class="g-play-again-button" id="play-again">PLAY AGAIN</button>
+        </div>
+    </div>
 </body>
+
 </html>
